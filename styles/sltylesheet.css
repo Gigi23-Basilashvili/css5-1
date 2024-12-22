@@ -4,61 +4,53 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #07081A;;
+    background-color: #07081A;
+    
 }
-.navHeader {
-    max-width: 1040px;
-    margin: 0 auto;
-    width: 100%;
+.navContent {
+    width: 1040px;
     display: flex;
     justify-content: space-between;
-    padding-top: 14px;
+    align-items: center;
 }
-.headText {
+nav {
+    display: flex;
+    padding: 14px 200px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #261C51;
+}
+.purpleSpan {
+    font-size: 16px;
     color: #B968DE;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px
-}
-.textDetails {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
 }
 .navText {
     display: flex;
-    justify-content: space-between;
-    width: 274px;
-}
-.groupFrame {
-    border-radius: 8px;
-    background: #9100D3;
-    display: flex;
-    width: 32px;
-    height: 32px;
     justify-content: center;
     align-items: center;
+    gap: 16px;
+}
+.normalText {
+    font-size: 16px;
+    color: #FFF;
+}
+.navLogo {
+    align-items: center;
     gap: 10px;
-    flex-shrink: 0;
+    display:flex;
+    align-items: center;
+    border-radius: 8px;
+    background: #9100D3;
 }
-main {
-    width: 1040px;
-    margin: 0 auto;
-    padding-top: 88px;
-}
-.divH {
-    margin: 0 auto;
-    width: 600px;
+.container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 88px;
     flex-direction: column;
-    gap: 32px;
+    flex-wrap: wrap;
 }
-.divH h1 {
+.textContent h1 {
     color: #FFF;
     text-align: center;
     font-family: Inter;
@@ -67,7 +59,15 @@ main {
     font-weight: 800;
     line-height: 52px;
 }
-.divH span {
+.textContent {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding-top: 88px;
+}
+.textContent span {
     color: #C0C0C0;
     text-align: center;
     font-family: Inter;
@@ -76,7 +76,7 @@ main {
     font-weight: 400;
     line-height: 24px;
 }
-.divH button {
+.textContent button {
     color: #FFF;
     text-align: center;
     font-family: Inter;
@@ -84,127 +84,114 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     border-radius: 8px;
     background: #9100D3;
-    align-self: center;
-    padding: 12px 24px;
 }
-.companyLogos {
+.childContainer {
+    display: flex;
+    width: 1040px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 88px;
+}
+    /*  */
+.logoContent {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 90px;
+    display: flex;
+}
+/*  */
+.mainText {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    justify-content: space-between;
+    
+}
+.textOne {
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 304px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #261C51;
+}
+.textOne h2 {
+    color: #FFF;
+    font-size: 20px;  
+}
+.textOne span {
+    color: #C0C0C0;
+    font-size: 14px;
+}
+/*  */
+.textTwo {
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 304px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #261C51;
+}
+.textTwo h2 {
+    color: #FFF;
+    font-size: 20px;  
+}
+.textTwo span {
+    color: #C0C0C0;
+    font-size: 14px;
+}
+/*  */
+.textThree {
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 304px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #261C51;
+}
+.textThree h2 {
+    color: #FFF;
+    font-size: 20px; 
+}
+.textThree span {
+    color: #C0C0C0;
+    font-size: 14px;
+}
+.divFooter {
+    border-top: 1px solid #261C51;
+    display: flex;
+    padding: 14px 200px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 463px;
+}
+.footerContent {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 24px; 
+}
+.footerSize {
     width: 1040px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding-top: 88px;    
-}
-.divContent {
-    width: 1040px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    height: 500px;
     align-items: center;
 }
-.contentOne h2 {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
-}
-.contentOne span {
-    color: #C0C0C0;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    width: 256px;
-    
-}
-.contentOne {
-    width: 304px;
-    display:flex ;
-    flex-direction: column;
-    gap: 16px;
-    border-radius: 8px;
-    border: 1px solid #261C51;
-    padding: 16px 24px;
-}
-.contentTwo h2 {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
-}
-.contentTwo span {
-    color: #C0C0C0;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    width: 256px;
-}
-.contentTwo {
-    width: 304px;
-    display:flex ;
-    flex-direction: column;
-    gap: 16px;
-    border-radius: 8px;
-    border: 1px solid #261C51;
-    padding: 16px 24px;
-}
-.contentThree {
-    width: 304px;
-    display:flex ;
-    flex-direction: column;
-    gap: 16px;
-    border-radius: 8px;
-    border: 1px solid #261C51;
-    padding: 16px 24px;
-}
-.contentThree span {
-    color: #C0C0C0;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    width: 256px;
-}
-.contentThree h2 {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
-}
-footer{
-    width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    border-top: 1px solid #261C51;
 
-}
-footer span {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    
-}
-footer img {
-    height: 24px;
-}
-header {
-    width: 1440px;
-    border-bottom: 1px solid #261C51;
-}
